@@ -18,7 +18,8 @@ main {
     font-family: 'Coiny';
 }
 
-h1{
+.list h1{
+    font-family: 'Coiny';
     margin-left: 10%;
     font-size: 3rem;
     display: block;
