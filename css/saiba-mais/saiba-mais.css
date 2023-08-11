@@ -1,0 +1,49 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&display=swap');
+main {
+    background-color: #8b8699;
+    background-size: cover;
+    background-position: center;
+}
+
+.container_saibamais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ul{
+    list-style: circle;
+    display: inline;
+    font-family: 'Coiny';
+}
+
+h1{
+    margin-left: 10%;
+    font-size: 3rem;
+    display: block;
+}
+
+.list li{
+    margin-left: 10%;
+    letter-spacing: 0.2rem;
+    float: left;
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .container_saibamais{
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 426px) {
+    .container_saibamais{
+        display: block;
+    }
+    
+}
+
+
