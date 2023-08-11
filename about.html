@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b362ee2bcc.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css//index/header.css">
-    <link rel="stylesheet" href="css//index/main.css">
-    <link rel="stylesheet" href="css//index/footer.css">
-    <link rel="stylesheet" href="css//index/style.css">
-    <title>Clean Food</title>
+    <link rel="stylesheet" href="css//about/header.css">
+    <link rel="stylesheet" href="css//about/main.css">
+    <link rel="stylesheet" href="css//about/footer.css">
+    <link rel="stylesheet" href="css//about/style.css">
+    <title>Sobre Nós</title>
 </head>
 <body>
     <header>
@@ -17,7 +17,7 @@
             <img src="img/planta-1.png" alt="" class="plant_one">
             <div class="logo"><img src="img/titulo (1).png" alt="" width="130rem"><a href="index.html"></a></div>
             <ul class="links">
-                <li><a href="about.html">sobre</a></li>
+                <li><a href="home">sobre</a></li>
                 <li><a href="contact">contato</a></li>
                 <li><a href="about">saiba mais</a></li>
             </ul>
@@ -36,27 +36,16 @@
                 <li><a href="#" class="action_btn" id="login_dropdown">Login</a></li>
         </div>
     </header>
-    <script>
-        const toggleBtn = document.querySelector(' .toggle_btn')
-        const toggleBtnIcon = document.querySelector(' .toggle_btn i')
-        const dropDownMenu = document.querySelector(' .dropdown_menu')
-
-        toggleBtn.onclick = function () {
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-                ? 'fa-solid fa-xmark'
-                : 'fa-solid fa-bars'
-        }
-    </script> 
     <main>
-        <section id="text_center">
-            <img src="img/titulo (1).png" alt="">
-            <p>
-                O site com as receitas para você!!
-            </p>
-        </section>
+        <div class="container_about">
+        <div class="text_container">
+            <h1>SOBRE NÓS</h1>
+        <p>
+        A Clean Food foi criada no ano de 2023, por cinco jovens que se importa com a diversidade alimentar buscando trazer conhecimento para as pessoas de todos os gosto. Com o objetivo de trazer mais sabor e vida, apresentando receitas de  diversas modalidades, focando no publíco: vegano,vegetariano e pessoas com intolerâcia alimentar.Sempre ligada as questões ambientais com um de seus valores "quanto mais natural melhor" tanto para o nosso corpo quanto para a sociedade, se mantendo atualizada com a tendência do momento e inovando no mundo culinário trazendo uma explosão de sabor para seus usuários.      
+        </p>
+        </div>
+            <img src="img/sobre_nos_image.png" alt="" id="container_img">
+        </div>
     </main>
     <footer>
         <div id="footer_content">
