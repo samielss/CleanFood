@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pr-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,7 @@
     <script src="https://kit.fontawesome.com/b362ee2bcc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/carrosel/carrosel.css">
     <title>Clean Food</title>
 </head>
 <body>
@@ -14,6 +15,19 @@
 
     </header>  
     <main>
+        <div class="container_slider">
+            <button id="prev_btn"><img src="image/carrosel/arrow.png" alt="prev"></button>
+            <div class="container_images">
+                <figure><img src="image/carrosel/teste1.jpg" alt="teste1" class="slider on"></figure>
+                <figure><img src="image/carrosel/teste2.jpg" alt="teste2" class="slider"></figure>
+                <figure><img src="image/carrosel/teste3.jpg" alt="teste3" class="slider"></figure>
+            </div>
+            <button id="next_btn"><img src="image/carrosel/arrow.png" alt="next"></button>
+        </div> 
+
+
+
+
 
     </main>
     <footer>
@@ -79,6 +93,7 @@
             &#169
             desenvolvido por clean food
         </div>
-    </footer>  
+    </footer> 
+    <script src="js/carrosel.js"></script> 
 </body>
 </html>
