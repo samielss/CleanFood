@@ -1,8 +1,4 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
 nav, div, ul, li,a {
     text-decoration: none;
     color: #FFECD6;
@@ -31,7 +27,7 @@ ul{
 
 
 header {
-    font-family: 'Coiny' sans-serif;
+    font-family: 'Coiny', sans-serif;
     background-color: #483F68;
 }
 .logo{
@@ -89,15 +85,15 @@ header {
     cursor: pointer;
     transition: scale 0.2 ease;
     margin-left: 0.5rem;
-    max-width: 320px;
-    max-height: 50px;
+    max-width: 220px;
+    max-height: 40px;
 }
 .action_btn:hover {
     scale:1.25;
     color: #FFECD6;
     transition: all, 0.2s;
-    max-width: 320px;
-    max-height: 50px;
+    max-width: 220px;
+    max-height: 40px;
 }
 .action_btn:active{
     scale: 0.95;
@@ -148,7 +144,4 @@ header {
         left: 2rem;
         width: unset;
     }
-}
-main {
-    background-color: #483F68;
 }
