@@ -1,48 +1,86 @@
-
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 nav, div, ul, li,a {
     text-decoration: none;
-    color: #fff;
+    color: #FFECD6;
     font-size: 1rem;
 }
-a:hover {
-    color: orange;
+ul{
+    list-style: none;
+}
+.links li a {
+    color: #FFECD6;
+    padding: 0.2rem 0.8rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+.links li a:hover{
+    background-color: #8C79B2;
+    padding: 0.5rem 0.8rem;
+    transition: all, 0.2s
 }
 /* header */
 
 
 header {
-    position: relative;
-    padding: 0 2rem;
+    font-family: 'Coiny' sans-serif;
     background-color: #483F68;
-    height: 70px;
 }
-
+.logo{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+.navbar .plant_two{
+    position: relative;
+    top: 15px;
+}
+.navbar .plant_one{
+    position: absolute;
+    left: 0px;
+}
+.fa-magnifying-glass {
+    padding-left: 1rem;
+    padding-bottom: 0.4rem;
+    margin-right: 0.8rem;
+    cursor: pointer;
+}
 .navbar {
     width: 100%;
-    height: 60px;
+    height:95px;
     max-width: 1200px;
     margin: 0 auto;
+    margin-right: 0px;
+    padding-right: 5rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-}
-.logo {
-    padding-top: 1.5rem;
+    justify-content: right;
+    padding-right: 4rem;
+    padding: 0px;
 }
 .navbar .links {
     display: flex;
     gap: 2rem;
 }
 .navbar .toggle_btn {
-    color: #fff;
+    color: #FFECD6;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 .action_btn {
-    background-color: orange;
-    color: #fff;
-    padding: 0.5rem 1rem;
+    background-color: #8C79B2;
+    color: #FFECD6;
+    padding: 0.4rem 1rem;
     border: none;
     outline: none;
     border-radius: 20px;
@@ -50,10 +88,16 @@ header {
     font-weight: bold;
     cursor: pointer;
     transition: scale 0.2 ease;
+    margin-left: 0.5rem;
+    max-width: 320px;
+    max-height: 50px;
 }
 .action_btn:hover {
-    scale:1.05;
-    color: #fff;
+    scale:1.25;
+    color: #FFECD6;
+    transition: all, 0.2s;
+    max-width: 320px;
+    max-height: 50px;
 }
 .action_btn:active{
     scale: 0.95;
@@ -63,7 +107,7 @@ header {
     display: none;
     position: absolute;
     right: 2rem;
-    top: 60px;
+    top: 100px;
     height: 0;
     width: 300px;
     background: rgba(255, 255, 255, 0.1);
@@ -76,7 +120,7 @@ header {
     height: 240px;
 }
 .dropdown_menu li {
-    padding: 0.7rem;
+    padding: 0.6rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,4 +148,7 @@ header {
         left: 2rem;
         width: unset;
     }
+}
+main {
+    background-color: #483F68;
 }
