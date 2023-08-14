@@ -6,11 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b362ee2bcc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/saiba-mais/saiba-mais.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/carrosel/carrosel.css">
-    <title>intolerâncias</title>
+    <link rel="stylesheet" href="css/login.css">
+    <title>Clean Food</title>
 </head>
 <body>
     <header>
@@ -20,7 +19,7 @@
             <ul class="links">
                 <li><a href="home">sobre</a></li>
                 <li><a href="contact">contato</a></li>
-                <li><a href="about">saiba mais</a></li>
+                <li><a href="intolerancias.html">saiba mais</a></li>
             </ul>
             <a href="#" class="action_btn">login</a>
             <div class="toggle_btn">
@@ -52,45 +51,27 @@
         }
     </script> 
     <main>
-        <div class="container_saibamais">
-            <div class="list">
-                <h1>Tipos de intolerância.</h1>
-                <ul>
-                    <li>Intolerância à lactose</li>
-                    <li>Intolerância a glúten</li>
-                    <li>Intolerância à sacarose</li>
-                    <li>Intolerância a milho</li>
-                    <li>Intolerância à levedura</li>
-                    <li>Intolerância à castanha</li>
-                    <li>Intolerância a refrigerantes</li>
-                    <li>Intolerância a alimentos de origem animal</li>
-                </ul>
-            </div>
-            <div class="container_slider">
-                <button id="prev_btn"><img src="img/carrosel/arrow.png" alt="prev"></button>
-                <div class="container_images">
-                    <figure><img src="img/carrosel/teste1.jpg" alt="teste1" class="slider on"></figure>
-                    <figure><img src="img/carrosel/teste2.jpg" alt="teste2" class="slider"></figure>
-                    <figure><img src="img/carrosel/teste3.jpg" alt="teste3" class="slider"></figure>
+        <h1>Login</h1>
+        <figure><img src="image/login/linha.png" alt="linha"></figure>
+        <div class="login_container">
+            <div class="card_login">
+                <figure><img src="image/login/login.png" alt="Login"></figure>
+
+                <div class="form_login">
+                    <form action="#" id="form">
+                        <div class="form_dados">
+                        <label for="email_login"><br>
+                        <input type="text" id="email_login" name="email_login" value="E-mail ou telefone"><br>
+                        <label for="senha_login"></label>
+                        <input type="text" id="senha_login" name="senha_login" value="Senha"><br>
+                        <input type="submit" value="Entrar" id="Entrar">
+                        <a href="#"><p>esqueceu sua senha?</p></a>
+                        <button>Criar nova conta</button>
+                        </div>
+                    </form> 
                 </div>
-                <button id="next_btn"><img src="img/carrosel/arrow.png" alt="next"></button>
             </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -167,6 +148,5 @@
             desenvolvido por clean food
         </div>
     </footer>  
-    <script src="js/carrosel.js"></script>
 </body>
 </html>
