@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+main {
+    background-color: #8C79B2;
+    font-family: 'Poppins' , sans-serif;
+}
+main {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFECD6;
+    max-height: 400;
+}
+main.cards {
+    display: flex;
+    flex-direction: row;
+    padding: 32px;
+}
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #b5aacc;
+    padding: 1rem e 1.5rem;
+    border-radius: 1.1rem;
+    height: 200px;
+    max-height: 400px;
+    margin-left: 32px;
+}
+
+main.cards section.card i{
+    padding-top: 35px;
+    width: 100%;
+}
+
+main.cards section.card:first-child{
+    margin-left: 0;
+}
+
+main.cards section.card figure.icon{
+    width: 64px;
+    height: 64px;
+}
+main.cards section.card img{
+    width: 100%;
+}
+main.cards section.card h3{
+    font-size: 100%;
+    margin: 16px 0;
+}
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+}
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 800;
+    color: #FFECD6;
+}
+main.cards section.card.contact button{
+    background: linear-gradient(to right, #9F66FF, #dfcbff);
+}
+main.cards section.card.shop button{
+    background: linear-gradient(to right, #3e8aff, #bbdeff);
+}
+main.cards section.card.about button{
+    background: linear-gradient(to right, #fe5f8f, #ffc7d9);
+}
+main.cards section.card.contact {
+    box-shadow: 20px 20px 50px -30px #dbc4ff;
+}
+main.cards section.card.shop {
+    box-shadow: 20px 20px 50px -30px #afd6ff;
+}
+main.cards section.card.about {
+    box-shadow: 20px 20px 50px -30px #ffc1d5;
+}
+
+@media screen and (max-width: 720px)  {
+    main {
+        height: 200vh;
+    }
+    main.cards {
+        flex-direction: column;
+    }
+    main.cards section.card{
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+    main.cards section.card button {
+        font-size: 16px;
+    }
+}
