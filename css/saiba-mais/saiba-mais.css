@@ -7,14 +7,14 @@ main {
 }
 
 .container_saibamais{
-    display: flex;
+    display: inline-grid;
+    grid-template-columns:  auto auto;
     justify-content: center;
     align-items: center;
 }
 
 .list ul{
     list-style: circle;
-    display: inline;
     font-family: 'Coiny';
 }
 
@@ -28,9 +28,12 @@ main {
 .list li{
     margin-left: 10%;
     letter-spacing: 0.2rem;
-    float: left;
     padding: 0.5rem;
     font-size: 2rem;
+}
+
+.container_slider{
+    margin-left: 100px;
 }
 
 @media screen and (max-width: 768px) {
@@ -38,6 +41,9 @@ main {
         display: block;
     }
     
+    .container_slider{
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -45,5 +51,8 @@ main {
         display: block;
     }
     
+    .container_slider{
+        margin-left: 0;
+    }
 }
 
