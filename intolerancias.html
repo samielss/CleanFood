@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b362ee2bcc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/saiba-mais/saiba-mais.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrosel/carrosel.css">
+    <title>intolerâncias</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="img/planta-1.png" alt="" class="plant_one">
+            <div class="logo"><img src="img/titulo (1).png" alt="" width="130rem"><a href="index.html"></a></div>
+            <ul class="links">
+                <li><a href="home">sobre</a></li>
+                <li><a href="contact">contato</a></li>
+                <li><a href="about">saiba mais</a></li>
+            </ul>
+            <a href="#" class="action_btn">login</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <img src="img/planta-2.png" alt="" width="90rem" class="plant_two">
+        </nav>
+        <div class="dropdown_menu">
+            <li><a href="index.html">Home</a></li>
+                <li><a href="contact">Sobre</a></li>
+                <li><a href="about">Contatos</a></li>
+                <li><a href="intolerancias.html">saiba mais</a></li>
+                <li><a href="login.html" class="action_btn" id="login_dropdown">Login</a></li>
+        </div>
+    </header>
+    <script>
+        const toggleBtn = document.querySelector(' .toggle_btn')
+        const toggleBtnIcon = document.querySelector(' .toggle_btn i')
+        const dropDownMenu = document.querySelector(' .dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+                ? 'fa-solid fa-xmark'
+                : 'fa-solid fa-bars'
+        }
+    </script> 
+    <main>
+        <div class="container_saibamais">
+            <div class="list">
+                <h1>Tipos de intolerância.</h1>
+                <ul>
+                    <li>Intolerância à lactose</li>
+                    <li>Intolerância a glúten</li>
+                    <li>Intolerância à sacarose</li>
+                    <li>Intolerância a milho</li>
+                    <li>Intolerância à levedura</li>
+                    <li>Intolerância à castanha</li>
+                    <li>Intolerância a refrigerantes</li>
+                    <li>Intolerância a alimentos de origem animal</li>
+                </ul>
+            </div>
+            <div class="container_slider">
+                <button id="prev_btn"><img src="img/carrosel/arrow.png" alt="prev"></button>
+                <div class="container_images">
+                    <figure><img src="img/carrosel/teste1.jpg" alt="teste1" class="slider on"></figure>
+                    <figure><img src="img/carrosel/teste2.jpg" alt="teste2" class="slider"></figure>
+                    <figure><img src="img/carrosel/teste3.jpg" alt="teste3" class="slider"></figure>
+                </div>
+                <button id="next_btn"><img src="img/carrosel/arrow.png" alt="next"></button>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </main>
+    <footer>
+        <div id="footer_content">
+        
+            <div id="footer_contacts">
+                <h1><figure>
+                    <img src="img/titulo (1).png" alt="Logo" style="max-width: 250px;">
+                </figure></h1>
+                <div id="footer_social_media">
+                    <a href="#" class="footer_link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                    <a href="#" class="footer_link" id="facebook">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+            <ul class="footer_list">
+                <li>
+                    <h3>blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Teste</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Teste</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Teste</a>
+                </li>
+            </ul>
+            
+            <ul class="footer_list">
+                <li>
+                    <h3>blog</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Teste</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Teste</a>
+                </li>
+                <li>
+                    <a href="#" class="footer_link">Teste</a>
+                </li>
+            </ul>
+            <div id="footer_subscribe">
+                <h3>Inscreva-se</h3>
+                <p>Digite seu e-mail para ser notificado sobre nossas atividades</p>
+                <div id="footer_input">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="footer_copyright">
+            &#169
+            desenvolvido por clean food
+        </div>
+    </footer>  
+    <script src="js/carrosel.js"></script>
+</body>
+</html>
