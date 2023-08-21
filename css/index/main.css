@@ -9,11 +9,49 @@ main {
 section#text_center{
     font-family: 'Jomhuria';
     font-size: 2.7rem;
-    height: calc(100vh - 60px);
+    height: calc(35vh - 60px);
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: top;
     text-align: center;
+    padding-top: 1rem;
     color: #fff;
 }
+/*cards*/
+@import url('https://fonts.googleapis.com/css2?family=Jomhuria&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coiny&display=swap');
+div.cards {
+    font-family: 'Poppins' , sans-serif;
+}
+
+section.cards {
+    background-image: url('/image/test.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    border-radius: 1.1rem;
+    width: 90rem;
+    max-width: 100rem;
+    height: 30rem;
+    max-height: 600px;
+    padding-left: 3rem;
+    margin-left: 15rem ;
+}
+section.cards div.card_receita {
+    background-color: #8C79B2;
+    height: 26rem;
+    border-radius: 2rem;;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    width: 20rem;
+}
+
