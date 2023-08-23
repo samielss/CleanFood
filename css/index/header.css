@@ -29,6 +29,9 @@ ul{
 header {
     font-family: 'Coiny', sans-serif;
     background-color: #483F68;
+    position: fixed;
+    width: 100%;
+    z-index: +1;
 }
 .logo{
     position: absolute;
@@ -137,6 +140,12 @@ header {
     }
     .dropdown_menu {
         display: block;
+    }
+    .logo a img {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        align-content: center;
     }
 }
 @media (max-width: 576px) {
