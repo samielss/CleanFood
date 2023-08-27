@@ -20,13 +20,19 @@ section#text_center{
     text-align: center;
     color: #fff;
 }
+.receitas {
+    text-align: center;
+    font-family: 'Jomhuria';
+    font-size: 14rem;
+    color: #FFECD6;
+}
 /*cards*/
     section.cards {
     font-family: 'Shadows Into Light', cursive;
     background-image: url('/image/test.png');
     background-size: cover;
     background-position: center;
-    height: 60vh;
+    height: 80vh;
     display: flex;
 }
 section.cards div.card_receita {
@@ -79,6 +85,121 @@ section.cards div.card_preparo ul.prep li.descr{
 }
 section.card.slider {
     position: relative;
+}   
+@media screen and (max-width: 900px ) {
+    main{
+        width: 100%;
+    }
+    section#text_center img {
+        width: 80%;
+    }
+    section#text_center p {
+        font-size: 80%;
+    }
+    section#text_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section.cards {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 2rem    ;
+        -webkit-border-radius: 2rem    ;
+        -moz-border-radius: 2rem    ;
+        -ms-border-radius: 2rem    ;
+        -o-border-radius: 2rem    ;
+}
+    section.cards div.card_receita {
+        height: 50%;
+        width: 100%;
+        margin-right: 0rem;
+        border-radius: 2rem 2rem 0rem 0rem;
+        -webkit-border-radius: 2rem 2rem 0rem 0rem;
+        -moz-border-radius: 2rem 2rem 0rem 0rem;
+        -ms-border-radius: 2rem 2rem 0rem 0rem;
+        -o-border-radius: 2rem 2rem 0rem 0rem;
+}
+    section.cards div.card_receita h1 {
+        padding-left: .5rem;
+        font-size: 2.7rem;
+        text-align: center;
+    }
+    section.cards div.card_receita h3 {
+        padding-left: 17.5rem;
+        font-size: 2.3rem;
+}
+    
+    section.cards div.card_receita ul.qnt li.ingredientes{
+        padding-top: 0.6rem; padding-bottom: 0.5rem;
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+    section.cards div.card_preparo ul.prep li.descr{
+        padding-bottom: 0.9rem;
+        color: #E8FFCE;
+        padding-left: 0.7rem;
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 500px ) {
+    main{
+        width: 100%;
+    }
+    section#text_center img {
+        width: 80%;
+    }
+    section#text_center p {
+        font-size: 80%;
+    }
+    section#text_center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section.cards {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 2rem    ;
+        -webkit-border-radius: 2rem    ;
+        -moz-border-radius: 2rem    ;
+        -ms-border-radius: 2rem    ;
+        -o-border-radius: 2rem    ;
+}
+    section.cards div.card_receita {
+        height: 50%;
+        width: 100%;
+        margin-right: 0rem;
+        border-radius: 2rem 2rem 0rem 0rem;
+        -webkit-border-radius: 2rem 2rem 0rem 0rem;
+        -moz-border-radius: 2rem 2rem 0rem 0rem;
+        -ms-border-radius: 2rem 2rem 0rem 0rem;
+        -o-border-radius: 2rem 2rem 0rem 0rem;
+}
+    section.cards div.card_receita h1 {
+        padding-left: .5rem;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+    section.cards div.card_receita h3 {
+        padding-left: 1.2rem;
+        font-size: 1.3rem;
+}
+    
+    section.cards div.card_receita ul.qnt li.ingredientes{
+        padding-top: 0.6rem; padding-bottom: 0.5rem;
+        margin-right: 2rem;
+        font-size: 1.1rem;
+        max-width: 100%;
+    }
+    section.cards div.card_preparo ul.prep li.descr{
+        padding-bottom: 0.9rem;
+        color: #E8FFCE;
+        padding-left: 0.7rem;
+        font-size: 1.2rem;
+    }
 }
 @media (max-width: 390px ) {
     main{
@@ -136,121 +257,5 @@ section.card.slider {
         color: #E8FFCE;
         padding-left: 0.7rem;
         font-size: 1.2rem;
-    }
-}
-@media (max-width: 500px ) {
-    main{
-        width: 100%;
-    }
-    section#text_center img {
-        width: 80%;
-    }
-    section#text_center p {
-        font-size: 80%;
-    }
-    section#text_center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    section.cards {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        border-radius: 2rem    ;
-        -webkit-border-radius: 2rem    ;
-        -moz-border-radius: 2rem    ;
-        -ms-border-radius: 2rem    ;
-        -o-border-radius: 2rem    ;
-}
-    section.cards div.card_receita {
-        height: 50%;
-        width: 100%;
-        margin-right: 0rem;
-        border-radius: 2rem 2rem 0rem 0rem;
-        -webkit-border-radius: 2rem 2rem 0rem 0rem;
-        -moz-border-radius: 2rem 2rem 0rem 0rem;
-        -ms-border-radius: 2rem 2rem 0rem 0rem;
-        -o-border-radius: 2rem 2rem 0rem 0rem;
-}
-    section.cards div.card_receita h1 {
-        padding-left: .5rem;
-        font-size: 1.7rem;
-        text-align: center;
-    }
-    section.cards div.card_receita h3 {
-        padding-left: 1.2rem;
-        font-size: 1.3rem;
-}
-    
-    section.cards div.card_receita ul.qnt li.ingredientes{
-        padding-top: 0.6rem; padding-bottom: 0.5rem;
-        margin-right: 2rem;
-        font-size: 1.1rem;
-        max-width: 100%;
-    }
-    section.cards div.card_preparo ul.prep li.descr{
-        padding-bottom: 0.9rem;
-        color: #E8FFCE;
-        padding-left: 0.7rem;
-        font-size: 1.2rem;
-    }
-}   
-@media (max-width: 900px ) {
-    main{
-        width: 100%;
-    }
-    section#text_center img {
-        width: 80%;
-    }
-    section#text_center p {
-        font-size: 80%;
-    }
-    section#text_center {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    section.cards {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        border-radius: 2rem    ;
-        -webkit-border-radius: 2rem    ;
-        -moz-border-radius: 2rem    ;
-        -ms-border-radius: 2rem    ;
-        -o-border-radius: 2rem    ;
-}
-    section.cards div.card_receita {
-        height: 50%;
-        width: 100%;
-        margin-right: 0rem;
-        border-radius: 2rem 2rem 0rem 0rem;
-        -webkit-border-radius: 2rem 2rem 0rem 0rem;
-        -moz-border-radius: 2rem 2rem 0rem 0rem;
-        -ms-border-radius: 2rem 2rem 0rem 0rem;
-        -o-border-radius: 2rem 2rem 0rem 0rem;
-}
-    section.cards div.card_receita h1 {
-        padding-left: .5rem;
-        font-size: 2.7rem;
-        text-align: center;
-    }
-    section.cards div.card_receita h3 {
-        padding-left: 17.5rem;
-        font-size: 2.3rem;
-}
-    
-    section.cards div.card_receita ul.qnt li.ingredientes{
-        padding-top: 0.6rem; padding-bottom: 0.5rem;
-        padding-left: 10rem;
-        font-size: 1.1rem;
-        max-width: 100%;
-    }
-    section.cards div.card_preparo ul.prep li.descr{
-        padding-bottom: 0.9rem;
-        color: #E8FFCE;
-        padding-left: 0.7rem;
-        font-size: 1.1rem;
     }
 }   
