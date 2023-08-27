@@ -1,5 +1,8 @@
 main{
-    background-color: #8b8699;
+        background-image: url('/img/bg.svg');
+        background-size: cover;
+        background-position: center;
+
     text-align: center;
 }
 
