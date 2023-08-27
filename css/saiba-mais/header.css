@@ -29,6 +29,9 @@ ul{
 header {
     font-family: 'Coiny', sans-serif;
     background-color: #483F68;
+    position: fixed;
+    width: 100%;
+    z-index: +1;
 }
 .logo{
     position: absolute;
@@ -98,6 +101,7 @@ header {
 .action_btn:active{
     scale: 0.95;
 }
+
 /* dropdown menu*/
 .dropdown_menu {
     display: none;
@@ -113,7 +117,7 @@ header {
     transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 .dropdown_menu.open{
-    height: 240px;
+    height: 280px;
 }
 .dropdown_menu li {
     padding: 0.6rem;
